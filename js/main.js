@@ -2,7 +2,7 @@ import modalities from './classes.json';
 
 var btn = document.querySelector('.menu-btn');
 var menu = document.querySelector('.mobile-wrapper');
-var output = document.querySelector('.modalities');
+var output = document.querySelector('.modalities .container');
 
 btn.onclick = function () {
 	toggle(menu, 'mobile-wrapper--visible');
@@ -22,7 +22,8 @@ function toggle (element, className) {
 		console.log(mod);
 		list.innerHTML += '<li class="modality">' + 
 							'<h3 class="modality__name">' + mod.title + '</h3>' +
-								'<p class="modality__description">' + mod.description + '</p>'
+							'<p class="modality__description">' + mod.description + '</p>' +
+							'<span id="modality__type">' + mod.type + '</span>' +
 						  '</li>';
 	});
 
@@ -30,10 +31,10 @@ function toggle (element, className) {
 	output.appendChild(list);
 } ());
 
-$(document).ready(function () {
-	$('.bxslider').bxSlider({
-		minSlides: 1,
-		maxSlides: 4
-	});
-});
+// $(document).ready(function () {
+// 	$('.bxslider').bxSlider({
+// 		minSlides: 1,
+// 		maxSlides: 4
+// 	});
+// });
 

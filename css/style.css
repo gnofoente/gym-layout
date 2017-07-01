@@ -311,3 +311,31 @@
 		width: 50%;
 	}
 }
+
+/*
+ * Modalities
+ */
+
+.modalities {
+	padding-top: 20px;
+	background: #d7d7d7;
+	color: #3f3f3f;
+}
+
+.modalities__title {
+	text-align: center;
+}
+
+.filter {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.filter label {
+	display: inline-block;
+}
+
+#modality__type {
+	visibility: hidden;
+	position: absolute;
+}
