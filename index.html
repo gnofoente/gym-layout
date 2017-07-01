@@ -2,23 +2,34 @@
 <html>
 <head>
 	<title>GymPass</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="header">
-		<img src="#" alt="" class="header__logo">
+		<div class="container">
+			<img src="img/logo.png" alt="Gympass" class="header__logo">
 
-		<nav class="header__menu">
-			<ul>
-				<li><a href="#">Academias</a></li>
-				<li><a href="#">Como funciona</a></li>
-				<li><a href="#">Para sua empresa</a></li>
-				<li><a href="#">Blog</a></li>
-			</ul>
-		</nav>
+			<i class="menu-btn fa fa-bars" aria-hidden="true"></i>
 
-		<div class="header__login">
-			<a href="#">Cadastro</a>
-			<a href="#">Login</a>
+			<div class="mobile-wrapper in-blk">
+				<nav class="header__menu">
+					<ul>
+						<li><a href="#" class="link">Academias</a></li>
+						<li><a href="#" class="link">Como funciona</a></li>
+						<li><a href="#" class="link">Para sua empresa</a></li>
+						<li><a href="#" class="link">Blog</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__login">
+					<a href="#" class="link">Cadastro</a>
+					<a href="#" class="link">Login</a>
+				</div>
+			</div>
 		</div>
 	</header>
 
@@ -131,5 +142,7 @@
 			<button>Cadastrar</button>
 		</form>
 	</footer>
+
+	<script src="js/main.js"></script>
 </body>
 </html>

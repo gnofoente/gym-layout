@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i,700');
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.in-blk {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.justify::after {
+	content: " ";
+	display: inline-block;
+	width: 100%;
+}
+
+.link {
+	text-decoration: none;
+	color: #ff001e;
+}
+
+/*
+ * Header
+ */
+
+.header {
+	background: white;
+	box-shadow: 1px -13px 35px black;
+	position: fixed;
+	padding: 5px 0;
+	top: 0;
+	width: 100%;
+}
+
+.col-2 {
+	width: 49%;
+}
+
+.header__logo {
+	vertical-align: middle;
+}
+
+.header__menu ul {
+	padding: 0;
+	list-style: none;
+}
+
+.header__menu,
+.header__login {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.header__login .link {
+	display: block;
+}
+
+.menu-btn {
+	color: #ff001e;
+	float: right;
+	margin-top: 6px;
+	font-size: 35px;
+}
+
+.mobile-wrapper {
+	left: 0;
+	opacity: 0;
+	padding-bottom: 20px;
+	position: absolute;
+	text-align: center;
+	transform: translateY(-244px);
+	transition: .7s ease;
+	width: 100%;
+}
+
+.mobile-wrapper--visible {
+	background: white;
+	box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.33);
+	opacity: 1;
+	display: block;
+	transform: translateY(0);
+	line-height: 35px;
+	letter-spacing: 0.7px;
+}
+
+
+/* Desktop styles*/
+
+@media (min-width: 700px) {
+	.mobile-wrapper {
+		color: initial;
+		left: 0;
+		opacity: 1;
+		padding: 0;
+		position: static;
+		transform: translateY(0);
+		text-align: left;
+		width: 78%;
+	}
+
+	.header__menu {
+		display: inline-block;
+		font-size: 13px;
+	}
+
+	.menu-btn {
+		display: none;
+	}
+
+	.header__menu ul {
+		margin-left: 20px;
+	}
+
+	.header__logo {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.header__menu ul li {
+		display: inline-block;
+		padding: 0 0.5vw;
+		position: relative;
+		top: -3px;
+		vertical-align: middle;
+	}	
+
+	.header__login {
+		font-size: 13px;
+		position: absolute;
+		top: 11px;
+		right: 0;
+	}
+
+	.header__login .link {
+		margin-left: 10px;
+		display: inline;
+	}
+}
+
+@media (min-width: 900px) {
+	.header__menu,
+	.header__login {
+		font-size: 18px;
+	}
+
+	.mobile-wrapper {
+		width: 83%;
+	}
+
+	.header__login {
+		top: 16px;
+	}
+}
+
+@media (min-width: 980px) {
+	.header__menu ul li {
+		padding: 0 1.4vw;
+	}
+}
+
+@media (min-width: 1440px) {
+	.mobile-wrapper {
+		width: 89%;
+	}
+}
+
+
+/*
+ * Banner
+ */
+
+.banner-area {
+	margin-top: 71px;
+}
