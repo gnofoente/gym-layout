@@ -247,3 +247,67 @@
 		margin-left: 5%;
 	}
 }
+
+/*
+ * Plan details
+ */
+
+.plan-details {
+	color: #3f3f3f;
+	text-align: center;
+	line-height: 1.7;
+	margin-top: 50px;
+	width: 90%;
+}
+
+.plan-details p {
+	font-size: .85em;
+}
+
+.option {
+	margin-top: 50px;
+}
+
+@media (min-width: 700px) {
+	.plan-details__info {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.option {
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+		text-align: center;
+	}
+
+	.plan-details__options {
+		text-align: justify;
+	}
+
+	.plan-details__options::after {
+		content: " ";
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.plan-details__options {
+		font-size: 15px;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.option img {
+		width: 30%;
+	}
+
+	.plan-details {
+		font-size: 20px;
+	}
+
+	.plan-details__info {
+		width: 50%;
+	}
+}
