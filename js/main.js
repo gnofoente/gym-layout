@@ -87,8 +87,6 @@ function render (filter) {
 	});
 };
 
-
-
 $(document).ready(function () {
 	render();
 });

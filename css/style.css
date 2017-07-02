@@ -2,6 +2,7 @@
 
 * {
 	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
 }
 
 .container {
@@ -47,10 +48,12 @@
 }
 
 .button {
+	background: #cccccc;
 	border: none;
 	color: #3f3f3f;
 	display: inline-block;
-	padding: .8em .8em;
+	margin-top: 20px;
+	padding: .9em .8em;
 	font-weight: bold;
 }
 
@@ -430,7 +433,7 @@ input[type='checkbox']:disabled + label::before {
 .modality {
 	background: white;
     box-shadow: 0px 0px 8px -1px;
-    height: 320px;
+    height: 360px;
     margin: 30px 0;
     max-width: 300px;
     padding: 20px;
@@ -493,4 +496,59 @@ input[type='checkbox']:disabled + label::before {
 	display: block;
 	margin: 50px auto;
 	padding: .7em 2.8em;
+}
+
+/*
+ * Footer
+ */
+
+.footer {
+	background: #3f3f3f;
+	color: white;
+	font-weight: bold;
+}
+
+.footer .container {
+	padding: 30px 0;
+	text-align: center;
+	width: 80%;
+}
+
+.footer__text {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+}
+
+.form {
+	display: inline-block;
+}
+
+.form__text {
+	border: none;
+	height: 47px;
+	margin-right: -4px;
+}
+
+@media (min-width: 950px) {
+	.footer .container {
+		width: 95%;
+	}
+
+	.footer__text {
+		margin-right: 30px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.form__text {
+		min-width: 290px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.form__text {
+		min-width: 420px;
+	}
 }
