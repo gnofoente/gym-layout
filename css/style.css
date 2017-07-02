@@ -505,9 +505,13 @@ input[type='checkbox']:disabled + label::before {
 	text-align: left;
 }
 
+.question p {
+	font-size: .9em;
+}
+
 @media (min-width: 1000px) {
 	.column {
-		width: 49%;
+		width: 46%;
 	}
 
 	.question {
