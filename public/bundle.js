@@ -94,7 +94,7 @@ function toggle (element, className) {
 	modsCollection.forEach(function (mod) {
 		console.log(mod);
 		list.innerHTML += '<li class="modality">' + 
-							'<h3 class="modality__name">' + mod.title + '</h3>' +
+							'<h2 class="modality__name">' + mod.title + '</h3>' +
 							'<p class="modality__description">' + mod.description + '</p>' +
 							'<span id="modality__type">' + mod.type + '</span>' +
 						  '</li>';
@@ -104,12 +104,14 @@ function toggle (element, className) {
 	output.appendChild(list);
 } ());
 
-// $(document).ready(function () {
-// 	$('.bxslider').bxSlider({
-// 		minSlides: 1,
-// 		maxSlides: 4
-// 	});
-// });
+$(document).ready(function () {
+	$('.bxslider').bxSlider({
+		minSlides: 1,
+		maxSlides: 4,
+		slideWidth: 300,
+		slideMargin: 20
+	});
+});
 
 
 
