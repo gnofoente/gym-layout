@@ -152,27 +152,22 @@ function render (filter) {
 	console.log(modsCollection.length);
 	output.appendChild(list);
 
+	var bannerOptions = {
+		controls: true,
+		minSlides: 1,
+		maxSlides: 8,
+		slideWidth: 320,
+		slideMargin: 20,
+		nextText:'>',
+		prevText:'<'
+	}
+
 	if ($(document).width() < 650) {
-		$('.bxslider').bxSlider({
-			minSlides: 1,
-			maxSlides: 8,
-			slideWidth: 320,
-			slideMargin: 20,
-		});
+		$('.bxslider').bxSlider(bannerOptions);
 	} else if ($(document).width() < 1300 && modsCollection.length >= 4) {
-		$('.bxslider').bxSlider({
-			minSlides: 1,
-			maxSlides: 8,
-			slideWidth: 320,
-			slideMargin: 20,
-		});
+		$('.bxslider').bxSlider(bannerOptions);
 	} else if ($(document).width() > 1300 && modsCollection.length > 4) {
-		$('.bxslider').bxSlider({
-			minSlides: 1,
-			maxSlides: 8,
-			slideWidth: 320,
-			slideMargin: 20,
-		});
+		$('.bxslider').bxSlider(bannerOptions);
 	}
 };
 
