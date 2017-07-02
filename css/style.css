@@ -321,7 +321,13 @@
 	padding-top: 20px;
 	background: #d7d7d7;
 	color: #3f3f3f;
-	height: 630px;
+	height: 722px;
+}
+
+@media (min-width: 660px) {
+	.modalities {
+		height: 690px;
+	}
 }
 
 .modalities__title {
@@ -341,6 +347,10 @@
 	margin-bottom: 20px;
 }
 
+.filter label:hover {
+	cursor: pointer;
+}
+
 .filter label::before {
 	background: white;
 	border-radius: 2px;
@@ -355,7 +365,16 @@
 }
 
 input[type='checkbox']:checked + label::before {
-	background: grey;
+	background: black;
+}
+
+input[type='checkbox']:disabled + label {
+	color: #a9a9a9;
+}
+
+input[type='checkbox']:disabled + label::before {
+	background: #e2e2e2;
+	border-color: #a9a9a9;
 }
 
 @media (min-width: 400px) {
