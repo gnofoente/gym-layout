@@ -108,7 +108,7 @@
 	position: absolute;
 	text-align: center;
 	transform: translateY(-244px);
-	transition: .7s ease;
+    transition: transform .7s ease, opacity .8s ease, background .3s ease;
 	width: 100%;
 }
 
@@ -125,12 +125,14 @@
 @media (min-width: 700px) {
 	.mobile-wrapper {
 		color: initial;
+		display: inline-block;
 		left: 0;
 		opacity: 1;
 		padding: 0;
 		position: static;
 		transform: translateY(0);
 		text-align: left;
+		vertical-align: middle;
 		width: 78%;
 	}
 

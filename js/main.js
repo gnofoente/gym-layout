@@ -82,7 +82,7 @@ function render (filter) {
 	$('.bxslider').bxSlider({
 		minSlides: 1,
 		maxSlides: 8,
-		slideWidth: 300,
+		slideWidth: 320,
 		slideMargin: 20,
 	});
 };
