@@ -284,7 +284,8 @@
 
 @media (min-width: 1200px) {
 	.banner-area {
-		background-position-x: 100%;
+		background-color: black;
+		background-position: center;
 		height: 540px;
 	}
 
