@@ -156,7 +156,6 @@ function render (filter) {
 		controls: true,
 		minSlides: 1,
 		maxSlides: 8,
-		slideWidth: 320,
 		slideMargin: 20,
 		nextText:'>',
 		prevText:'<'
