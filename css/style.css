@@ -218,6 +218,16 @@
 	}
 }
 
+@media (min-width: 1200px) {
+	.header__logo {
+		width: 10%;
+	}
+
+	.mobile-wrapper {
+		width: 88%;
+	}
+}
+
 @media (min-width: 1440px) {
 	.mobile-wrapper {
 		width: 89%;
@@ -310,12 +320,16 @@
 	width: 90%;
 }
 
-.plan-details p {
+.plan-details__text {
 	font-size: .85em;
 }
 
 .option {
-	margin-top: 50px;
+	margin: 70px 0;
+}
+
+.option__text {
+	font-size: 14px;
 }
 
 @media (min-width: 700px) {
