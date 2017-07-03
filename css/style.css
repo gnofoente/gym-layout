@@ -259,11 +259,9 @@
 	.banner-area ul {
 		width: 50%;
 	}
-}
 
-@media (min-width: 530px) {
 	.banner-area {
-		font-size: 20px;
+		height: 320px;
 	}
 }
 
@@ -271,7 +269,7 @@
 	.banner-area {
 		background-position-x: 75%;
 		height: 356px;
-		line-height: 40px;
+		line-height: 30px;
 	}
 }
 
@@ -480,6 +478,10 @@ input[type='checkbox']:disabled + label::before {
 .bx-viewport {
 	height: 400px !important;
 	width: 99% !important;
+}
+
+.bx-wrapper .bx-controls-direction a {
+	z-index: 0;
 }
 
 /*
