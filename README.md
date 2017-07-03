@@ -5,7 +5,7 @@ This project is a direct reproduction of the .png layout provided by GymPass. It
 
 The CSS approach was mobile-first, looking to style firstly for smaller screens. 
 
-The BEM methodology (https://en.bem.info/methodology/) was used for naming purposes.
+The BEM methodology (https://en.bem.info/methodology/) was used for class naming purposes.
 
 No CSS/JS frameworks were used. The main reason is that such kind of technology **was not** needed to deliver the final outcome, so using frameworks/other technologies would be overcomplicating.
 
